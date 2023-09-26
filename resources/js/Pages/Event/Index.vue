@@ -41,7 +41,7 @@ onMounted(() => {
 
 <template>
     <Head title="Eventos eletrizantes" />
-    <header class="d-flex justify-space-between">
+    <header class="d-flex justify-content-between">
         <h1 class="d-inline-block">Retroarch Eventos</h1>
         <Link class="d-inline-block text-end me-5 mt-1 p-1" href="/login">Login</Link>
     </header>

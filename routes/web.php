@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [EventController::class, 'index']);
-Route::get('/events/{event}', [EventController::class, 'show']);
+Route::get('/', [EventController::class, 'index'])->name('index');
+Route::get('/events/{event}', [EventController::class, 'show'])->name('event.show');
+
+Route::get('/login', [LoginController::class, 'show'])->name('login.show');
